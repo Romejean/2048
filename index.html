@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rush 2048</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="heading">2048</div>
+        <div class="heading" id="score">SCORE : 0</div>
+    </div>
+
+
+
+    <div class="Games">
+        <!-- le 2048 sera inséré ici -->
+    </div>
+
+
+    <div class="explanation">
+        <div> COMMENT JOUER ? </div>
+        <img class="important" id="imagekeyboard" src="pngwing.com.png" alt="">
+        <p>Use your Keyboard</p><br>
+        <span>Combine the identical numbers and try to reach<strong>the 2048 animation</strong>!</span>
+
+
+    </div>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript" src="Base2048.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.Games').game2048(); // appel de la fonction 'game2048' du pluggin appliquée à la div de class 'Games'
+        });
+    </script>
+</body>
+
+</html>
